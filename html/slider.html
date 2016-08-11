@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>Slider example</title>
+<script>
+function getSliderVal() {
+	var obj = document.getElementById("slider1").value;
+	alert('Myobj  '+obj);
+	document.getElementById("myText").value = obj;
+}
+</script>
+</head>
+<body>
+	<input id="slider1" type="range" min="100" max="500" step="10"  onchange="getSliderVal()" /> <Br>
+	<input type ="number" id="myText"/>	
+</body>
+</html>
